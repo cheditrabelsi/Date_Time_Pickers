@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.date_time_pickers.MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size"
+        android:text="@string/choose_datetime"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_date"
+            android:layout_marginTop="@dimen/button_top_margin"
+            android:text="@string/date_button"
+            android:onClick="showDatePickerDialog"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_time"
+            android:layout_marginTop="@dimen/button_top_margin"
+            android:layout_alignBottom="@id/button_date"
+            android:layout_toRightOf="@id/button_date"
+            android:text="@string/time_button"
+            android:onClick="showTimePickerDialog"/>
+    </RelativeLayout>
+</LinearLayout>
